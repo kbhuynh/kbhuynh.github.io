@@ -1,0 +1,59 @@
+/*-- General Styles --*/
+body{
+    font:16px "Yantramanav", sans-serif;
+    color:$mine-shaft;
+    line-height:24px;
+}
+
+a{
+    text-decoration:underline;
+    color:$mine-shaft;
+    @include transition($transition);
+    
+    &:hover{
+        color:$de-york;
+    }
+}
+
+h1{
+  font:4em 'Ilisarniq', sans-serif;
+  margin:0 -4px;
+}
+
+/*-- Nav --*/
+nav{
+    position:relative;
+    width:100%;
+    height:110px;
+    top:0;
+    right:0;
+    @include transition($transition);
+
+    & #logo img{
+        width:110px;
+        margin:20px 30px;
+        position:fixed;
+    }
+
+    & .links{
+        position:absolute;
+        margin:65px 30px;
+        right:0;
+
+        & a{
+            color:$mine-shaft;
+            text-decoration:none;
+            margin-right:80px;
+            font-size:1.05em;
+
+            &:last-child{
+                margin-right:30px;
+            }
+
+            &:hover{
+                color:$de-york;
+            }
+        }
+    }
+
+}

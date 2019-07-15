@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Kevin Huynh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" as="font" href="/Ilisarniq/Ilisarniq-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.6/lottie_light.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/" id="logo"><img src="/Images/logo.svg"></a>
+        <span class="links">
+            <a href="">Work</a>
+            <a href="">Gallery</a>
+            <a href="">Contact</a>
+        </span>
+    </nav>
+    <section id="work">
+        <h1>Hi! I'm Kevin.</h1>
+        <p>I'm a third-year student at the University of Virginia majoring in computer science with a passion for front-end development and UI/UX design.</p>
+        <p><a href=""><img src="/Images/doc-icon.svg">View my résumé</a></p>
+        <section id="projects">
+            <article class="project">
+                <div id="atom"></div>
+            </article>
+            <article class="project"></article>
+            <article class="project"></article>
+            <article class="project"></article>
+        </section>
+    </section>
+    <script>
+    var animation = lottie.loadAnimation({
+      container: document.getElementById("atom"),
+      renderer: 'svg',
+      load: true,
+      autoplay: true,
+      loop: true,
+      path: 'data.json',
+      setQuality: 2
+	});
+    </script>
+</body>

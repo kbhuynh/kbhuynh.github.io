@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Ilisarniq-Bold';
+  src: url('Ilisarniq-Bold.eot');
+  src: url('Ilisarniq-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Ilisarniq-Bold.woff2') format('woff2'),
+       url('Ilisarniq-Bold.woff') format('woff'),
+       url('Ilisarniq-Bold.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
