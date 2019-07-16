@@ -3,6 +3,8 @@ body{
     font:16px "Yantramanav", sans-serif;
     color:$mine-shaft;
     line-height:24px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
 }
 
 a{
@@ -18,6 +20,7 @@ a{
 h1{
   font:4em 'Ilisarniq', sans-serif;
   margin:0 -4px;
+  max-width:450px;
 }
 
 /*-- Nav --*/
@@ -27,7 +30,7 @@ nav{
     height:110px;
     top:0;
     right:0;
-    @include transition($transition);
+
 
     & #logo img{
         width:110px;

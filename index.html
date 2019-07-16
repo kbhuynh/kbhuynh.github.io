@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="preload" as="font" href="/Ilisarniq/Ilisarniq-Bold.woff2" type="font/woff2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.6/lottie_light.min.js"></script>
 </head>
 <body>
     <nav>
@@ -32,6 +31,8 @@
             <article class="project"></article>
         </section>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.6/lottie_light.min.js"></script>
     <script>
     var animation = lottie.loadAnimation({
       container: document.getElementById("atom"),
@@ -42,5 +43,66 @@
       path: 'data.json',
       setQuality: 2
 	});
+    </script>
+    <script src="https://unpkg.com/revealfx@latest/src/revealFx.js"></script>
+    <script>
+        window.onload = showThemColors();
+        function showThemColors() {
+            var counter = 0;
+            var title = document.querySelector('h1');
+            var p = document.querySelectorAll('#work p')[0];
+            var p2 = document.querySelectorAll('#work p')[1];
+            var revealSettings = {
+                bgColors: ['#83c79d', '#9bd2b0'],
+                duration: 500,
+                delay: 100,
+                direction: 'lr',
+                onHalfway: function (contentEl, revealerEl) {
+                    contentEl.style.opacity = 1;
+                    revealerEffect2.reveal();
+                    revealerEffect3.reveal();
+                }
+            }
+
+            var revealSettings2 = {
+                bgColors: ['#9bd2b0','#a8d7ba'],
+                duration: 500,
+                delay: 100,
+                direction: 'rl',
+                onHalfway: function (contentEl, revealerEl) {
+                    contentEl.style.opacity = 1;
+                }
+            };
+
+            var revealSettings3 = {
+                bgColors: ['#b4ddc4'],
+                duration: 500,
+                delay: 100,
+                direction: 'lr',
+                onHalfway: function (contentEl, revealerEl) {
+                    contentEl.style.opacity = 1;
+                }
+            };
+
+            var revealerEffect = new RevealFx(title, {
+                layers: 1,
+                isContentHidden: true,
+                revealSettings: revealSettings
+            });
+
+            var revealerEffect2 = new RevealFx(p, {
+                layers: 2,
+                isContentHidden: true,
+                revealSettings: revealSettings2
+            });
+
+            var revealerEffect3 = new RevealFx(p2, {
+                layers: 1,
+                isContentHidden: true,
+                revealSettings: revealSettings3
+            });
+
+            revealerEffect.reveal();
+        };
     </script>
 </body>

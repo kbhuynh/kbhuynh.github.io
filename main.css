@@ -10,15 +10,17 @@ body {
   font: 16px "Yantramanav", sans-serif;
   color: #222;
   line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: underline;
   color: #222;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 a:hover {
   color: #83c79d;
@@ -27,6 +29,7 @@ a:hover {
 h1 {
   font: 4em "Ilisarniq", sans-serif;
   margin: 0 -4px;
+  max-width: 450px;
 }
 
 /*-- Nav --*/
@@ -36,10 +39,6 @@ nav {
   height: 110px;
   top: 0;
   right: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 nav #logo img {
   width: 110px;
@@ -75,14 +74,18 @@ nav .links a:hover {
   font-size: 1.35em;
   line-height: 1.6em;
   margin-top: 5px;
-  max-width: 650px;
+  max-width: 700px;
+}
+#work p:nth-of-type(2) {
+  max-width: 170px;
 }
 #work img {
   vertical-align: middle;
-  margin: 0 10px 0 0;
+  margin: -4px 10px 0 0;
 }
 #work a {
   text-decoration-color: #83c79d;
+  font-size: 0.9em;
 }
 
 #projects {
