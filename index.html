@@ -19,9 +19,11 @@
         </span>
     </nav>
     <section id="work">
-        <h1>Hi! I'm Kevin.</h1>
-        <p>I'm a third-year student at the University of Virginia majoring in computer science with a passion for front-end development and UI/UX design.</p>
-        <p><a href=""><img src="/Images/doc-icon.svg">View my résumé</a></p>
+        <script type="text/javascript">document.write('<div class="js">');</script>
+            <h1>Hi! I'm Kevin.</h1>
+            <p>I'm a third-year student at the University of Virginia majoring in computer science with a passion for front-end development and UI/UX design.</p>
+            <p><a href=""><img src="/Images/doc-icon.svg">View my résumé</a></p>
+        <script type="text/javascript">document.write('</div>');</script>
         <section id="projects">
             <article class="project">
                 <div id="atom"></div>
@@ -61,7 +63,6 @@
                     contentEl.style.opacity = 1;
                     contentEl.style.color = "#222";
                     revealerEffect2.reveal();
-                    revealerEffect3.reveal();
                 }
             }
 
@@ -69,10 +70,11 @@
                 bgColors: ['#9bd2b0','#a8d7ba'],
                 duration: 500,
                 delay: 100,
-                direction: 'rl',
+                direction: 'lr',
                 onHalfway: function (contentEl, revealerEl) {
                     contentEl.style.opacity = 1;
                     contentEl.style.color = "#222";
+                    revealerEffect3.reveal();
                 }
             };
 
@@ -83,7 +85,8 @@
                 direction: 'lr',
                 onHalfway: function (contentEl, revealerEl) {
                     contentEl.style.opacity = 1;
-                    contentEl.style.color = "#222";
+                    contentEl.querySelector("a").style.color = "#222";
+                    contentEl.querySelector("a").style.textDeocrationColor = "#83c79d";
                 }
             };
 

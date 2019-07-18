@@ -30,7 +30,6 @@ h1 {
   font: 4em "Ilisarniq", sans-serif;
   margin: 0 -4px;
   max-width: 450px;
-  color: #fff;
 }
 
 /*-- Nav --*/
@@ -52,7 +51,6 @@ nav .links {
   right: 0;
 }
 nav .links a {
-  color: #222;
   text-decoration: none;
   margin-right: 80px;
   font-size: 1.05em;
@@ -62,6 +60,14 @@ nav .links a:last-child {
 }
 nav .links a:hover {
   color: #83c79d;
+}
+
+.js {
+  color: #fff;
+}
+.js a {
+  color: #fff;
+  text-decoration-color: #fff;
 }
 
 /*-- Work --*/
@@ -101,6 +107,10 @@ nav .links a:hover {
   background: #f5f2e1;
   padding: 20% 0;
   width: 100%;
+}
+
+.animated {
+  animation-delay: 0.25s;
 }
 
 /*# sourceMappingURL=main.css.map */
