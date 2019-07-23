@@ -20,10 +20,11 @@
     & img{
         vertical-align:middle;
         margin:-4px 10px 0 0;
+        opacity:0;
     }
 
     & a{
-        text-decoration-color:$de-york;
+        text-decoration-color:#fff;
         font-size:0.9em;
     }
 }

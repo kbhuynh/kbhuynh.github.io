@@ -89,9 +89,10 @@ nav .links a:hover {
 #work img {
   vertical-align: middle;
   margin: -4px 10px 0 0;
+  opacity: 0;
 }
 #work a {
-  text-decoration-color: #83c79d;
+  text-decoration-color: #fff;
   font-size: 0.9em;
 }
 
