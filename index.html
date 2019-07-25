@@ -20,15 +20,13 @@
     </nav>
     <section id="work">
         <script type="text/javascript">document.write('<div class="js">');</script>
-            <h1>Hi! I'm Kevin.</h1>
-            <p>I'm a third-year student at the University of Virginia majoring in computer science with a passion for front-end development and UI/UX design.</p>
-            <p><a href=""><img src="/Images/doc-icon.svg">View my résumé</a></p>
+            <h1><span><span>Hi! I'm Kevin.</span></span></h1>
+            <p><span><span>I'm a third-year student at the University of Virginia majoring in computer science with a passion for front-end development and UI/UX design.</span></span></p>
+            <p><a href=""><span><span><img src="/Images/doc-icon.svg">View my résumé</span></span></a></p>
         <script type="text/javascript">document.write('</div>');</script>
         <section id="projects">
-            <article class="project">
-                <div id="atom"></div>
-            </article>
-            <article class="project"></article>
+            <article class="project"><img src="/Images/div-pol-logo-black.svg"></article>
+            <article class="project"><div id="atom"></div></article>
             <article class="project"></article>
             <article class="project"></article>
         </section>
@@ -45,71 +43,5 @@
       path: 'data.json',
       setQuality: 2
 	});
-    </script>
-    <script src="https://unpkg.com/revealfx@latest/src/revealFx.js"></script>
-    <script>
-        window.onload = showThemColors();
-        function showThemColors() {
-            var counter = 0;
-            var title = document.querySelector('h1');
-            var p = document.querySelectorAll('#work p')[0];
-            var p2 = document.querySelectorAll('#work p')[1];
-            var revealSettings = {
-                bgColors: ['#83c79d', '#9bd2b0'],
-                duration: 500,
-                delay: 100,
-                direction: 'lr',
-                onHalfway: function (contentEl, revealerEl) {
-                    contentEl.style.opacity = 1;
-                    contentEl.style.color = "#222";
-                    revealerEffect2.reveal();
-                }
-            }
-
-            var revealSettings2 = {
-                bgColors: ['#9bd2b0','#a8d7ba'],
-                duration: 400,
-                delay: 100,
-                direction: 'lr',
-                onHalfway: function (contentEl, revealerEl) {
-                    contentEl.style.opacity = 1;
-                    contentEl.style.color = "#222";
-                    revealerEffect3.reveal();
-                }
-            };
-
-            var revealSettings3 = {
-                bgColors: ['#b4ddc4'],
-                duration: 400,
-                delay: 50,
-                direction: 'lr',
-                onHalfway: function (contentEl, revealerEl) {
-                    contentEl.style.opacity = 1;
-                    contentEl.querySelector("a").style.color = "#222";
-                    contentEl.querySelector("img").style.opacity = 1;
-                    contentEl.querySelector("a").style.textDecorationColor = "#83c79d";
-                }
-            };
-
-            var revealerEffect = new RevealFx(title, {
-                layers: 1,
-                isContentHidden: true,
-                revealSettings: revealSettings
-            });
-
-            var revealerEffect2 = new RevealFx(p, {
-                layers: 2,
-                isContentHidden: true,
-                revealSettings: revealSettings2
-            });
-
-            var revealerEffect3 = new RevealFx(p2, {
-                layers: 1,
-                isContentHidden: true,
-                revealSettings: revealSettings3
-            });
-
-            revealerEffect.reveal();
-        };
     </script>
 </body>

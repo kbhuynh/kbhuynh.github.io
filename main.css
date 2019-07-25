@@ -6,6 +6,24 @@
   src: local("Yantramanav"), url("/Ilisarniq/Ilisarniq-Bold.woff2") format("woff2"), url("/Ilisarniq/Ilisarniq-Bold.woff") format("woff");
 }
 /*-- General Styles --*/
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+@-webkit-keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
 body {
   font: 16px "Yantramanav", sans-serif;
   color: #222;
@@ -26,12 +44,6 @@ a:hover {
   color: #83c79d;
 }
 
-h1 {
-  font: 4em "Ilisarniq", sans-serif;
-  margin: 0 -4px;
-  max-width: 450px;
-}
-
 /*-- Nav --*/
 nav {
   position: relative;
@@ -44,11 +56,21 @@ nav #logo img {
   width: 110px;
   margin: 20px 30px;
   position: fixed;
+  visibility: hidden;
+  -webkit-animation: slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -moz-animation: slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -ms-animation: slide-down 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  animation: slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
 }
 nav .links {
   position: absolute;
   margin: 65px 30px;
   right: 0;
+  visibility: hidden;
+  -webkit-animation: slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -moz-animation: slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -ms-animation: slide-down 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  animation: slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
 }
 nav .links a {
   text-decoration: none;
@@ -62,38 +84,84 @@ nav .links a:hover {
   color: #83c79d;
 }
 
-.js {
-  color: #fff;
-}
-.js a {
-  color: #fff;
-  text-decoration-color: #fff;
-}
-
 /*-- Work --*/
+@keyframes slide-in {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+@-webkit-keyframes slide-in {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
 #work {
   position: absolute;
   right: 0;
   width: 80%;
   padding: 100px 50px;
 }
+#work h1 {
+  font: 4em "Ilisarniq", sans-serif;
+  margin: 0 -4px;
+  max-width: 450px;
+  visibility: hidden;
+}
+#work h1 span {
+  display: block;
+  overflow: hidden;
+}
+#work h1 span > span {
+  position: relative;
+  -webkit-animation: slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -moz-animation: slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -ms-animation: slide-in 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  animation: slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+}
 #work p {
   font-size: 1.35em;
   line-height: 1.6em;
   margin-top: 5px;
   max-width: 700px;
+  visibility: hidden;
 }
-#work p:nth-of-type(2) {
-  max-width: 170px;
+#work p span {
+  display: block;
+  overflow: hidden;
+}
+#work p span > span {
+  position: relative;
+  -webkit-animation: slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -moz-animation: slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -ms-animation: slide-in 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  animation: slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
 }
 #work img {
   vertical-align: middle;
   margin: -4px 10px 0 0;
-  opacity: 0;
 }
 #work a {
-  text-decoration-color: #fff;
+  text-decoration-color: #83c79d;
   font-size: 0.9em;
+}
+#work a span {
+  display: block;
+  overflow: hidden;
+}
+#work a span > span {
+  position: relative;
+  -webkit-animation: slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -moz-animation: slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  -ms-animation: slide-in 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+  animation: slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
 }
 
 #projects {
@@ -105,13 +173,25 @@ nav .links a:hover {
 }
 
 .project {
+  display: flex;
   background: #f5f2e1;
   padding: 20% 0;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-
-.animated {
-  animation-delay: 0.25s;
+.project:nth-of-type(1) {
+  background: #222;
+}
+.project:nth-of-type(1) img {
+  width: 80%;
+  padding-top: 5%;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.project #atom {
+  padding-top: 0%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,31 +1,92 @@
 /*-- Work --*/
+@keyframes slide-in {
+    from{
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+      visibility:visible;
+    }
+}
+
+@-webkit-keyframes slide-in {
+    from{
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+      visibility:visible;
+    }
+}
+
 #work{
     position:absolute;
     right:0;
     width:80%;
     padding:100px 50px;
 
+    h1{
+        font:4em 'Ilisarniq', sans-serif;
+        margin:0 -4px;
+        max-width:450px;
+        visibility:hidden;
 
-    & p{
+        span{
+            display:block;
+            overflow:hidden;
+            
+            > span{
+                position:relative;
+                -webkit-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+                -moz-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+                -ms-animation:slide-in 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+                animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+            }
+        }
+    }
+
+    p{
         font-size:1.35em;
         line-height:1.6em;
         margin-top:5px;
         max-width:700px;
-
-        &:nth-of-type(2){
-            max-width:170px;
+        visibility:hidden;
+        
+        span{
+            display:block;
+            overflow:hidden;
+            
+            > span{
+                position:relative;
+                -webkit-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+                -moz-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+                -ms-animation:slide-in 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+                animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+            }
         }
     }
 
-    & img{
+    img{
         vertical-align:middle;
         margin:-4px 10px 0 0;
-        opacity:0;
     }
 
-    & a{
-        text-decoration-color:#fff;
+    a{
+        text-decoration-color:$de-york;
         font-size:0.9em;
+
+        span{
+            display:block;
+            overflow:hidden;
+            
+            > span{
+                position:relative;
+                -webkit-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+                -moz-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+                -ms-animation:slide-in 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+                animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+            }
+        }
     }
 }
 
@@ -38,14 +99,28 @@
 }
 
 .project{
+    display:flex;
     background:$merino;
     padding:20% 0;
     width:100%;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+
+    &:nth-of-type(1){
+        background:$mine-shaft;
+        
+        img{
+            width:80%;
+            padding-top:5%;
+            -webkit-filter:invert(100%);
+            filter:invert(100%);
+        }
+    }
+
+    #atom{
+        padding-top:0%;
+    }
 }
 
-#atom{
-}
 
-.animated{
-    animation-delay: 0.25s;
-}

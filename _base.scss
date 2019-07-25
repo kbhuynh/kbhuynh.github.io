@@ -1,4 +1,25 @@
 /*-- General Styles --*/
+
+@keyframes slide-down {
+    from{
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+      visibility:visible;
+    }
+}
+
+@-webkit-keyframes slide-in {
+    from{
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+      visibility:visible;
+    }
+}
+
 body{
     font:16px "Yantramanav", sans-serif;
     color:$mine-shaft;
@@ -17,12 +38,6 @@ a{
     }
 }
 
-h1{
-    font:4em 'Ilisarniq', sans-serif;
-    margin:0 -4px;
-    max-width:450px;
-}
-
 /*-- Nav --*/
 nav{
     position:relative;
@@ -31,19 +46,28 @@ nav{
     top:0;
     right:0;
 
-
-    & #logo img{
+    #logo img{
         width:110px;
         margin:20px 30px;
         position:fixed;
+        visibility:hidden;
+        -webkit-animation:slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+        -moz-animation:slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+        -ms-animation:slide-down 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+        animation:slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
     }
 
-    & .links{
+    .links{
         position:absolute;
         margin:65px 30px;
         right:0;
+        visibility:hidden;
+        -webkit-animation:slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+        -moz-animation:slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+        -ms-animation:slide-down 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
+        animation:slide-down 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
 
-        & a{
+        a{
             text-decoration:none;
             margin-right:80px;
             font-size:1.05em;
@@ -58,13 +82,4 @@ nav{
         }
     }
 
-}
-
-.js{
-    color:#fff;
-
-    & a{
-        color:#fff;
-        text-decoration-color:#fff;
-    }
 }
