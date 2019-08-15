@@ -1,0 +1,116 @@
+
+nav{
+    a{
+        color:#fff;
+    }
+
+    #logo{
+        width:110px;
+        margin:20px 30px;
+        position:fixed;
+        fill:#fff;
+        z-index:999999;
+    }    
+}
+
+#banner{
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0 auto;
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    z-index:-999;
+}
+
+.intro{
+    text-align:center;
+    max-width:800px;
+    margin:100px auto;
+
+    h1{
+        color:#fff;
+        font:4em 'Ilisarniq', sans-serif;
+    }
+
+    p{
+        color:#fff;
+        font-size:1.2em;
+        line-height:1.8em;
+        margin-top:-40px;
+    }
+}
+
+aside{
+    position:absolute;
+    max-width:300px;
+    line-height:1.5em;
+    margin-top:60px;
+    font-size:1.3em;
+    
+    b{
+        color:#3A38B2;
+    }
+}
+
+
+.info{
+    position:relative;
+    max-width:85%;
+    margin:142px auto 100px auto;
+
+    .text{
+        font-size:1.3em;
+        line-height:2.2em;
+        margin-left:400px;
+
+        p:first-of-type{
+            padding-top:75px;
+        }
+
+        .h3{   
+            display:inline-block;
+            font:1.3em 'Ilisarniq', sans-serif;
+            text-transform:uppercase;
+            letter-spacing:0.15em;
+            background:#fff;
+            padding-right:10px;
+            z-index:999;
+        }
+
+        img, .img{
+            position:relative;
+            width:100%;
+            padding-top:45px;
+            margin-top:-26px;
+            border-top:1px solid #ddd;
+            z-index:-999;
+        }
+
+        .no-border{
+            border:none;
+            padding-top:30px;
+        }
+
+        .four_grid{
+            display:grid;
+            grid-template-rows:repeat(2, 1fr);
+            grid-template-columns:repeat(2, 1fr);
+            grid-gap:20px;
+        }
+
+        .six_grid{
+            display:grid;
+            grid-template-rows:repeat(3, 1fr);
+            grid-template-columns:repeat(2, 1fr);
+            grid-gap:20px;
+            grid-row-gap:0;
+            padding-top:30px;
+            
+            img{
+                padding:0!important;
+            }
+        }
+    }
+}

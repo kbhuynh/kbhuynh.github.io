@@ -10,6 +10,22 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="loader-wrapper">
+        <div class="loader">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                <polygon class="st0" points="53.5,53.5 53.5,206.9 70.5,206.9 70.5,70.5 329.5,70.5 329.5,329.5 181.4,329.5 181.4,346.5 
+            346.5,346.5 346.5,53.5 "/>
+                <g id="XMLID_4_">
+                    <path id="XMLID_11_" class="st0" d="M117.8,276l44.6,70.5h-33.5l-31.1-51l-16.6,18.4v32.6H53.4V226.8h27.9v55.3h0.2l44.6-55.3h34.3
+                L117.8,276z"/>
+                </g>
+            </svg>
+            <p class="loading">Loading</p>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <nav>
         <a href="/" id="logo"><img src="/Images/logo.svg"></a>
         <span class="links">
@@ -31,7 +47,7 @@
             <article class="project"></article>
         </section>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.6/lottie_light.min.js"></script>
     <script>
     var animation = lottie.loadAnimation({

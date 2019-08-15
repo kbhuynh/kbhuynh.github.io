@@ -1,24 +1,4 @@
 /*-- Work --*/
-@keyframes slide-in {
-    from{
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0);
-      visibility:visible;
-    }
-}
-
-@-webkit-keyframes slide-in {
-    from{
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0);
-      visibility:visible;
-    }
-}
-
 #work{
     position:absolute;
     right:0;
@@ -29,20 +9,6 @@
         font:4em 'Ilisarniq', sans-serif;
         margin:0 -4px;
         max-width:450px;
-        visibility:hidden;
-
-        span{
-            display:block;
-            overflow:hidden;
-            
-            > span{
-                position:relative;
-                -webkit-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-                -moz-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-                -ms-animation:slide-in 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-                animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-            }
-        }
     }
 
     p{
@@ -50,20 +16,6 @@
         line-height:1.6em;
         margin-top:5px;
         max-width:700px;
-        visibility:hidden;
-        
-        span{
-            display:block;
-            overflow:hidden;
-            
-            > span{
-                position:relative;
-                -webkit-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-                -moz-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-                -ms-animation:slide-in 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-                animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-            }
-        }
     }
 
     img{
@@ -74,19 +26,6 @@
     a{
         text-decoration-color:$de-york;
         font-size:0.9em;
-
-        span{
-            display:block;
-            overflow:hidden;
-            
-            > span{
-                position:relative;
-                -webkit-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-                -moz-animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-                -ms-animation:slide-in 0.76s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-                animation:slide-in 0.75s 0.25s forwards cubic-bezier(0.075, 0.32, 0.565, 1);
-            }
-        }
     }
 }
 

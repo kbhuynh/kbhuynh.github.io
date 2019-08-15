@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>Kevin Huynh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" as="font" href="/Ilisarniq/Ilisarniq-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+            <svg id="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+       <style type="text/css">
+           .st0{fill:#F5FF45;stroke:#000000;stroke-miterlimit:10;}
+           .st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+       </style>
+       <g>
+           <polygon id="XMLID_5_" points="53.5,53.5 53.5,206.9 70.5,206.9 70.5,70.5 329.5,70.5 329.5,329.5 181.4,329.5 181.4,346.5 
+               346.5,346.5 346.5,53.5 	"/>
+           <g id="XMLID_2_">
+               <path id="XMLID_3_" d="M117.8,276l44.6,70.5h-33.5l-31.1-51l-16.6,18.4v32.6H53.4V226.8h27.9v55.3h0.2l44.6-55.3h34.3L117.8,276z"
+                   />
+           </g>
+       </g>
+       </svg>
+        <span class="links">
+            <a href="">Work</a>
+            <a href="">Gallery</a>
+            <a href="">Contact</a>
+        </span>
+    </nav>
+    <img id="banner" src="/Images/404-mockups.png">
+    <section class="intro">
+        <h1>ACS Error Pages</h1>
+        <p>A complete redesign of the collection of error pages (e.g., 401, 403, 404, 500, 503, etc.) on the American Chemical Society’s main website</p>
+    </section>
+    <section class="info">
+        <aside>
+            <p><b>Date</b>: June–July 2019</p>
+            <p><b>Role</b>: Designer + Developer</p>
+            <p><b>Tools</b>: Sketch, Adobe After Effects, HTML/CSS, Javascript</p>
+        </aside>
+        <div class="text">
+            <p>As a web design intern at the American Chemical Society (ACS), part of my work included redesigning and developing the collection of error pages on the main website. The collection consisted of seven different error pages: 401, 403, 404, 500, 503, SSO error, and the “e-Web unavailable” error. Shown below is a screenshot of the previous 404 page, and as you may see, it is not the most visually engaging page. The design team (of which I was a part) suggested that the page should be more interactive and attractive so that users could be more forgiving when landing on an error page. Of course, being ACS, the design had to feature some connection to chemistry.</p>
+            <span class="h3">Before</span>
+            <img src="Images/acs-404-before.png">
+            <p>I first tackled the key visual element of each page. In the screenshot, you can see that the 404 was made up of elements on the periodic table, clearly indicating a connection to chemistry. To modernize the design and make it look less like clip-art, after perusing Dribbble and Behance for inspiration, I decided on a flask design. </p>
+            <span class="h3">Ideation</span>
+            <div class="img"></div>
+            <div class="four_grid">
+                <img class="no-border" src="/Images/image.png">
+                <img class="no-border" src="/Images/image-1.png">
+                <img class="no-border" src="/Images/image-2.png">
+                <img class="no-border" src="/Images/image-3.png">
+            </div>
+            <p>The two images in the left column and the top right were what I initially came up with, and the last image is the general layout of the 404 page that we stuck with. My initial ideas, while more minimal and less cluttered, did not help guide users to their desired location, so I added in a section for useful links like the previous 404 page included. The rest of the team approved, so I went on to animating the flask. I knew GIFs were pretty much out of the equation, since they often are not high enough quality, and hand-coding an SVG animation was much too tedious (and frankly beyond my own abilities). Thankfully, I came across a plugin called Bodymovin, which Airbnb leveraged and extended in their library, Lottie, which exports animations created in Adobe After Effects to JSON. The JSON would then be rendered as responsive, SVG animations on the browser. </p>
+            <span class="h3">After</span>
+            <img src="/Images/acs-404-after.png">
+            <p>The design team and others in the department suggested for the error message to be written as a pun to keep a more lighthearted tone (and hopefully create a more forgiving response). The pun we came up with ultimately fit better with an animated atom than a flask, so the flask was incorporated into some of the other pages instead. With the user engaged upon seeing the animation, the “404” is also interactive thanks to the vanillatilt.js plugin, which creates a tilting/parallax effect upon mouseover on desktop and screen position on mobile. There is not much functionality to this aspect of the design other than to increase user engagement in order to appease users’ frustration, but even if the user was not frustrated to begin with, we still thought it was fun to see, especially when mobile users move their devices and the error message tilts accordingly.</p>
+            <div class="six_grid">
+                <img class="no-border" src="/Images/acs-401.png">
+                <img class="no-border" src="/Images/acs-403.png">
+                <img class="no-border" src="/Images/acs-500.png">
+                <img class="no-border" src="/Images/acs-503.png">
+                <img class="no-border" src="/Images/sso-error.png">
+                <img class="no-border" src="/Images/eweb-unavailable.png">
+            </div>
+            <p>We figured that some error pages would not be visited as often as others, with the 404 error being the most-visited one. As such, I decided that not all of the visual elements on each error page had to be related to chemistry, so long as some other portion of the maintained that connection. For example, the 403 error’s lock is not related to chemistry, but the error message pun uses two elements on the periodic table, sodium (Na) and bromine (Bro). The 503 page’s relation to chemistry is a little more subtle, but “periodically” in the error description below is supposed to reference the periodic table. In all, I am glad with how the pages turned out and was excited to see them published on a live site other than my own portfolio. Of course there are improvements that could have been made, namely performance ones since the pages rely on several scripts, but the redesigned version is definitely a step up from before.</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="/acs-404.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.6/lottie_light.min.js"></script>
+    <script>
+    var animation = lottie.loadAnimation({
+      container: document.getElementById("atom"),
+      renderer: 'svg',
+      load: true,
+      autoplay: true,
+      loop: true,
+      path: 'data.json',
+      setQuality: 2
+	});
+    </script>
+</body>
