@@ -48,6 +48,7 @@ nav .links {
 }
 
 nav .links a {
+  color: #222;
   text-decoration: none;
   margin-right: 80px;
   font-size: 1.05em;
@@ -287,8 +288,8 @@ nav .links a:hover {
   filter: invert(100%);
 }
 
-nav a {
-  color: #fff;
+nav .link {
+  color: #fff !important;
 }
 
 nav #logo {
