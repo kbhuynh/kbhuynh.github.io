@@ -113,3 +113,24 @@ aside{
         }
     }
 }
+
+footer{
+    max-width:100%;
+    background:#38376A;
+    padding:50px 0;
+    text-align:center;
+
+    a{
+        color:#fff;
+        text-decoration:none;
+        font-size:1.3em;
+        border:1px solid #fff;
+        padding:10px 50px;
+        border-radius:100px;
+
+        &:hover{
+            color:$mine-shaft!important;
+            background:#fff;
+        }
+    }
+}
