@@ -46,20 +46,19 @@
     align-items:center;
     overflow:hidden;
 
-    &:nth-of-type(1){
-        background:$mine-shaft;
-        
-        img{
-            width:80%;
-            padding-top:5%;
-            -webkit-filter:invert(100%);
-            filter:invert(100%);
-        }
-    }
-
     #atom{
         padding-top:0%;
     }
 }
 
 
+#dp{
+    background:$mine-shaft;
+    
+    img{
+        width:80%;
+        padding-top:5%;
+        -webkit-filter:invert(100%);
+        filter:invert(100%);
+    }
+}

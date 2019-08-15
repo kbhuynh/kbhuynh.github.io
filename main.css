@@ -272,19 +272,19 @@ nav .links a:hover {
   overflow: hidden;
 }
 
-.project:nth-of-type(1) {
+.project #atom {
+  padding-top: 0%;
+}
+
+#dp {
   background: #222;
 }
 
-.project:nth-of-type(1) img {
+#dp img {
   width: 80%;
   padding-top: 5%;
   -webkit-filter: invert(100%);
   filter: invert(100%);
-}
-
-.project #atom {
-  padding-top: 0%;
 }
 
 nav a {
@@ -296,7 +296,7 @@ nav #logo {
   margin: 20px 30px;
   position: fixed;
   fill: #fff;
-  z-index: 999999;
+  z-index: 99;
 }
 
 #banner {
