@@ -4,12 +4,18 @@ nav{
     }
 
     #logo{
-        width:110px;
-        margin:20px 30px;
-        position:fixed;
+        @extend #logo;
         fill:#fff;
-        z-index:99;
+
+        @media(max-width:414px){
+            width:80px;
+        }
     }    
+
+    
+    @media(max-width:556px){
+        position:absolute;
+    }
 }
 
 #banner{
@@ -21,16 +27,41 @@ nav{
     height:500px;
     object-fit:cover;
     z-index:-999;
+
+    @media(max-width:556px){
+        display:none;
+    }
 }
 
 .intro{
     text-align:center;
     max-width:800px;
-    margin:100px auto;
+    margin:90px auto;
+
+    @media(max-width:556px){
+        display:flex;
+        flex-flow:column;
+        position:relative;
+        top:-90px;
+        left:0;
+        background:url(/Images/404-mockups.png) no-repeat center;
+        background-size:cover;
+        width:100%;
+        height:100vh;
+        margin-bottom:0;
+        justify-content:center;
+        align-items:center;
+    }
 
     h1{
         color:#fff;
         font:4em 'Ilisarniq', sans-serif;
+        padding:0 20px;
+
+        @media(max-width:556px){
+            padding:30px 20px 0 20px;
+            line-height:1.1em;
+        }
     }
 
     p{
@@ -38,15 +69,23 @@ nav{
         font-size:1.2em;
         line-height:1.8em;
         margin-top:-40px;
+        padding:0 50px;
     }
 }
 
 aside{
     position:absolute;
-    max-width:300px;
+    max-width:320px;
     line-height:1.5em;
     margin-top:60px;
-    font-size:1.3em;
+    font-size:1.1em;
+
+    @media(max-width:960px){
+        position:relative;
+        max-width:100%;
+        margin:0;
+        padding-top:30px;
+    }
     
     b{
         color:#3A38B2;
@@ -59,13 +98,27 @@ aside{
     max-width:85%;
     margin:142px auto 100px auto;
 
+    @media(max-width:556px){
+        margin-top:-80px;
+    }
+
     .text{
-        font-size:1.3em;
+        font-size:1.1em;
         line-height:2.2em;
-        margin-left:400px;
+        margin-left:380px;
+
+        @media(max-width:960px){
+            margin:0;
+        }
 
         p:first-of-type{
             padding-top:75px;
+
+            @media(max-width:960px){
+                margin-top:30px;
+                padding-top:20px;
+                border-top:1px solid #ccc;
+            }
         }
 
         .h3{   
@@ -133,4 +186,14 @@ footer{
             background:#fff;
         }
     }
+}
+
+#lines{
+    path{
+        fill:#fff;
+    }
+}
+
+.st0{
+    @extend .st0;
 }

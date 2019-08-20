@@ -18,6 +18,7 @@ a{
     }
 }
 
+
 /*-- Nav --*/
 nav{
     position:relative;
@@ -26,10 +27,30 @@ nav{
     top:0;
     right:0;
 
-    #logo img{
+    #logo{
         width:110px;
         margin:20px 30px;
         position:fixed;
+        z-index:99;
+        
+        @media(max-width:767px){
+            position:absolute!important;
+        }
+
+        img{
+            width:110px;
+            margin:0;
+            position:fixed;
+
+            @media(max-width:767px){
+                position:absolute!important;
+                margin:0;
+            }
+
+            @media(max-width:414px){
+                width:80px;
+            }
+        }
     }
 
     .links{
@@ -50,9 +71,76 @@ nav{
             &:hover{
                 color:$de-york;
             }
+
+            @media(max-width:600px) {
+                display:none;
+            }
+        }
+    }
+    
+    .hamburger{
+        display:none;
+        z-index:99999!important;
+        color:#fff;
+        font-size:1.8em;
+
+        @media(max-width:600px){
+            position:fixed;
+            display:block!important;
+            right:40px;
+            top:50px;
+        }
+
+        svg{
+            @media(max-width:600px){
+                width:20px;
+            }
         }
     }
 
+    .sidebar {
+        display:flex;
+        background:$mine-shaft;
+        width:100%;
+        height:100vh;
+        transition:transform 0.5s;
+        position:fixed;
+        text-align:center;
+        z-index:9999!important;
+        flex-flow:column;
+        justify-content:center;
+        align-items:center;
+        
+        a{
+            color:#fff;
+            text-decoration:none;
+            font-size:3em;
+            line-height:2em;  
+
+            &:hover{
+                color:$de-york;
+            }
+        }
+      
+        &__trigger {
+          display: none!important;
+          &:checked {
+            & + label > .sidebar__button-open {
+              display: none!important;
+            }
+          }
+          &:not(:checked) {
+            & + label > .sidebar__button-close {
+              display: none!important;
+            }
+      
+            & ~ .sidebar {
+              transform: translateX(-100%);
+            }
+          }
+        }
+    }  
+    
 }
 
 .loader{
@@ -165,8 +253,8 @@ nav{
 }
 
 .st0{
-    fill:#333;
-    stroke:$de-york;
+    fill:#333!important;
+    stroke:$de-york!important;
     stroke-dasharray:200;
     animation: dash 5s linear forwards;
 }
@@ -176,3 +264,4 @@ nav{
         stroke-dashoffset:600;
     }
   }
+  

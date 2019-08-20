@@ -10,22 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="loader-wrapper">
-        <div class="loader">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
-                <polygon class="st0" points="53.5,53.5 53.5,206.9 70.5,206.9 70.5,70.5 329.5,70.5 329.5,329.5 181.4,329.5 181.4,346.5 
-            346.5,346.5 346.5,53.5 "/>
-                <g id="XMLID_4_">
-                    <path id="XMLID_11_" class="st0" d="M117.8,276l44.6,70.5h-33.5l-31.1-51l-16.6,18.4v32.6H53.4V226.8h27.9v55.3h0.2l44.6-55.3h34.3
-                L117.8,276z"/>
-                </g>
-            </svg>
-            <p class="loading">Loading</p>
-        </div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
     <nav>
         <a href="/" id="logo"><img src="/Images/logo.svg"></a>
         <span class="links">
@@ -33,16 +17,28 @@
             <a href="">Gallery</a>
             <a href="">Contact</a>
         </span>
+        <input id="sidebar__trigger" class="sidebar__trigger" type="checkbox"/>
+        <label for="sidebar__trigger">
+            <span class="hamburger sidebar__button-open">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 396.667 396.667" style="enable-background:new 0 0 396.667 396.667;" xml:space="preserve"><g><g><path d="M17,87.833h362.667c9.35,0,17-7.65,17-17s-7.65-17-17-17H17c-9.35,0-17,7.65-17,17C0,80.183,7.65,87.833,17,87.833z"/><path d="M17,215.333h362.667c9.35,0,17-7.65,17-17s-7.65-17-17-17H17c-9.35,0-17,7.65-17,17S7.65,215.333,17,215.333z"/><path d="M17,342.833h362.667c9.35,0,17-7.65,17-17s-7.65-17-17-17H17c-9.35,0-17,7.65-17,17S7.65,342.833,17,342.833z"/></g></g></svg>
+            </span>
+            <span class="hamburger sidebar__button-close">&#x2715;</span>
+        </label>
+        <div class="sidebar">
+            <a href="">Work</a>
+            <a href="">Gallery</a>
+            <a href="">Contact</a>
+        </div>
     </nav>
     <section id="work">
         <script type="text/javascript">document.write('<div class="js">');</script>
             <h1><span><span>Hi! I'm Kevin.</span></span></h1>
             <p><span><span>I'm a third-year student at the University of Virginia majoring in computer science with a passion for front-end development and UI/UX design.</span></span></p>
-            <p><a href=""><span><span><img src="/Images/doc-icon.svg">View my résumé</span></span></a></p>
+            <p><a href="https://drive.google.com/file/d/1AlxQ3aWxM_v5i_A0bHwnjaj1CZarRtwr/view?usp=sharing"><span><span><img src="/Images/doc-icon.svg">View my résumé</span></span></a></p>
         <script type="text/javascript">document.write('</div>');</script>
         <section id="projects">
             <article class="project" id="dp"><img src="/Images/div-pol-logo-black.svg"></article>
-            <a href="/acs-404.html"><article class="project"><div id="atom"></div></article></a>
+            <a title="View Project" href="/acs-404.html"><article class="project"><div id="atom"></div></article></a>
             <article class="project"></article>
             <article class="project"></article>
         </section>
