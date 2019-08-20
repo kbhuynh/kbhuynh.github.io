@@ -535,12 +535,25 @@ nav #logo {
   }
 }
 
+@media (max-width: 414px) {
+  .intro h1 {
+    font-size: 3.5em;
+  }
+}
+
 .intro p {
   color: #fff;
   font-size: 1.2em;
   line-height: 1.8em;
   margin-top: -40px;
   padding: 0 50px;
+}
+
+@media (max-width: 414px) {
+  .intro p {
+    font-size: 1.2em;
+    margin-top: -20px;
+  }
 }
 
 aside {
