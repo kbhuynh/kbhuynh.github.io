@@ -16,7 +16,7 @@
     }
 
     p{
-        font-size:1.35em;
+        font-size:1.15em;
         line-height:1.6em;
         margin-top:5px;
         max-width:700px;
@@ -69,14 +69,20 @@
 .project{
     display:flex;
     background:$merino;
-    padding:20% 0;
     width:100%;
     justify-content:center;
     align-items:center;
     overflow:hidden;
 
+    &:after{
+        content:"";
+        display:block;
+        padding-bottom:100%;
+    }
+
     #atom{
         padding-top:0%;
+        width:100%;
     }
 
     @media(max-width:767px){
@@ -93,5 +99,17 @@
         padding-top:5%;
         -webkit-filter:invert(100%);
         filter:invert(100%);
+    }
+}
+
+#card{
+    background:#AEC5EB;
+}
+
+#tumblr{
+    background:#E9AFA3;
+
+    #tum-logo{
+        width:65%;
     }
 }

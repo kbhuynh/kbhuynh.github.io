@@ -4,7 +4,6 @@
     font-family: "Ilisarniq";
     font-display: swap;
     unicode-range: U+000-5FF;
-    src: local('Yantramanav'),
-         url("/Ilisarniq/Ilisarniq-Bold.woff2") format("woff2"),
+    src: url("/Ilisarniq/Ilisarniq-Bold.woff2") format("woff2"),
          url("/Ilisarniq/Ilisarniq-Bold.woff") format("woff");
 }
