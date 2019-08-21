@@ -1,0 +1,18 @@
+@import "acs-404";
+
+#tum-aside{
+    b{
+        color:#d68979;
+    }
+}
+
+
+#tum-intro{
+    @media(max-width:556px){
+        background:url(/Images/tumblr.png) no-repeat center;
+    }
+}
+
+#tum{
+    background:#d68979;
+}

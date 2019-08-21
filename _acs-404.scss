@@ -1,6 +1,10 @@
 nav{
     .link{
         color:#fff!important;
+
+        &:hover{
+            color:$de-york!important;
+        }
     }
 
     #logo{
@@ -144,7 +148,7 @@ aside{
             position:relative;
             width:100%;
             padding-top:45px;
-            margin-top:-26px;
+            margin-top:-22px;
             border-top:1px solid #ddd;
             z-index:-999;
         }

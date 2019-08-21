@@ -1,0 +1,22 @@
+@import "acs-404";
+
+#card-aside{
+    b{
+        color:#7795c6;
+    }
+}
+
+#card-intro{
+    
+    @media(max-width:556px){
+        background:url(/Images/card.png) no-repeat center;
+    }
+}
+
+video{
+    width:100%;
+}
+
+#card-footer{
+    background:#7795c6;
+}
