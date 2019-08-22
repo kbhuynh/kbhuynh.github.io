@@ -1,0 +1,22 @@
+@import "acs-404";
+
+#dp-aside{
+    b{
+        color:$mine-shaft;
+    }
+}
+
+#dp-intro{
+    
+    @media(max-width:556px){
+        background:url(/Images/dp-banner.png) no-repeat center;
+    }
+}
+
+video{
+    width:100%;
+}
+
+#dp-footer{
+    background:$mine-shaft;
+}
