@@ -338,7 +338,7 @@ nav .sidebar__trigger:not(:checked) ~ .sidebar {
 
 @media (max-width: 350px) {
   #contact {
-    padding: 40px 40px 20px 40px;
+    padding: 40px 40px 10px 40px;
   }
 }
 
