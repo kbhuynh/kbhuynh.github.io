@@ -136,6 +136,7 @@ aside{
 
         .h3{   
             display:inline-block;
+            position:relative;
             font:1.3em 'Ilisarniq', sans-serif;
             text-transform:uppercase;
             letter-spacing:0.15em;
@@ -144,13 +145,17 @@ aside{
             z-index:999;
         }
 
+        a{
+            color:#ddd;
+        }
+
         img, .img{
             position:relative;
             width:100%;
             padding-top:45px;
             margin-top:-22px;
             border-top:1px solid #ddd;
-            z-index:-999;
+            z-index:9;
         }
 
         .no-border{
