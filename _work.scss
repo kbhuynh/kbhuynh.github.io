@@ -134,11 +134,19 @@
     text-align:center;
     border-top:1px solid #eee;
 
+    @media(max-width:350px){
+        padding:40px 40px 20px 40px;
+    }
+
    a{
         text-decoration:none;
         text-transform:uppercase;
         letter-spacing:0.1em;
         margin-bottom:5px;
+
+        @media(max-width:350px){
+            display:block;
+        }
 
        img{
            width:20px;
@@ -154,10 +162,18 @@
 
    #mail{
        float:left;
+
+        @media(max-width:350px){
+            float:initial;
+        }
    }
 
    #linkedin{
        float:right;
        margin-left:10px;
+    
+       @media(max-width:350px){
+            float:initial;
+        }
    }
 }

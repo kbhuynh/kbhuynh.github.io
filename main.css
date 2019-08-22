@@ -336,11 +336,23 @@ nav .sidebar__trigger:not(:checked) ~ .sidebar {
   border-top: 1px solid #eee;
 }
 
+@media (max-width: 350px) {
+  #contact {
+    padding: 40px 40px 20px 40px;
+  }
+}
+
 #contact a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 5px;
+}
+
+@media (max-width: 350px) {
+  #contact a {
+    display: block;
+  }
 }
 
 #contact a img {
@@ -358,9 +370,21 @@ nav .sidebar__trigger:not(:checked) ~ .sidebar {
   float: left;
 }
 
+@media (max-width: 350px) {
+  #contact #mail {
+    float: initial;
+  }
+}
+
 #contact #linkedin {
   float: right;
   margin-left: 10px;
+}
+
+@media (max-width: 350px) {
+  #contact #linkedin {
+    float: initial;
+  }
 }
 
 nav .link {
