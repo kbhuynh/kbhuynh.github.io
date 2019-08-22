@@ -344,10 +344,14 @@ nav .sidebar__trigger:not(:checked) ~ .sidebar {
 }
 
 #contact a img {
-  width: 15px;
-  border: 2px solid #000;
+  width: 20px;
   padding: 2px;
   border-radius: 2px;
+  vertical-align: middle;
+}
+
+#contact a .linkedin {
+  width: 15px;
 }
 
 #contact #mail {
@@ -356,6 +360,7 @@ nav .sidebar__trigger:not(:checked) ~ .sidebar {
 
 #contact #linkedin {
   float: right;
+  margin-left: 10px;
 }
 
 nav .link {

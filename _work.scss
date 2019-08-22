@@ -141,10 +141,14 @@
         margin-bottom:5px;
 
        img{
-           width:15px;
-           border:2px solid #000;
+           width:20px;
            padding:2px;
            border-radius:2px;
+           vertical-align:middle;
+       }
+
+       .linkedin{
+            width:15px;
        }
    }
 
@@ -154,5 +158,6 @@
 
    #linkedin{
        float:right;
+       margin-left:10px;
    }
 }
